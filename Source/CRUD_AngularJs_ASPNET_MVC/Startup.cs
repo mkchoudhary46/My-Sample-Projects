@@ -8,7 +8,7 @@ namespace CRUD_AngularJs_ASPNET_MVC
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+           // ConfigureAuth(app);
         }
     }
 }
