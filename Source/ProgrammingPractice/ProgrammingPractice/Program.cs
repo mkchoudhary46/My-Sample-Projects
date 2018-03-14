@@ -36,7 +36,7 @@ namespace ProgrammingPractice
     {
         static void Main(string[] args)
         {
-            var result=StringOperations.CheckIfStringsAreAnagram("abcd", "dcab");
+            ArrayOperations.RotateArrayToPivot();
             Console.ReadKey();
 
         }
@@ -79,6 +79,7 @@ namespace ProgrammingPractice
                 Console.WriteLine("Invalid Range");
             }
         }
+
         public static string CheckAndConvertobject(dynamic obj)
         {
             // If obj is Type student it asign value to Stuobj else it asign null

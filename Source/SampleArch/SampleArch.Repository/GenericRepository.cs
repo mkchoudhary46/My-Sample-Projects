@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using SampleArch.Model;
 
 namespace SampleArch.Repository
 {
