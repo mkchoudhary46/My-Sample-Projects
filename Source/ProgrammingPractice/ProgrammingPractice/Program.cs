@@ -2,11 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Stripe;
-using System.Numerics;
-using System.Text.RegularExpressions;
 
 namespace ProgrammingPractice
 {
@@ -97,12 +93,12 @@ namespace ProgrammingPractice
             return result;
         }
 
-        private static async Task GetDAta()
-        {
-            var chargeService = new StripeChargeService("sk_test_tdiQWtasXqtjfOxovBh0SuGr");
-            var data = await chargeService.GetAsync("ch_199WlvJ6EcgFLMUZjo9G9owG", null);
+        //private static async Task GetDAta()
+        ////{
+        //    var chargeService = new StripeChargeService("sk_test_tdiQWtasXqtjfOxovBh0SuGr");
+        //    var data = await chargeService.GetAsync("ch_199WlvJ6EcgFLMUZjo9G9owG", null);
 
-        }
+        //}
 
         public static int GetMajorityElement(params int[] x)
         {
