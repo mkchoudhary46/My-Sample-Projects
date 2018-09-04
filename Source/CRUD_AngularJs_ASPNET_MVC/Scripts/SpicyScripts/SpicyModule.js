@@ -1,1 +1,0 @@
-﻿var spicyApp = angular.module("spicyModule", []);
