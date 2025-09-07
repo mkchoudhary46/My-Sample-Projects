@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProgrammingPractice
 {
-     public static class StringOperations
+    public static class StringOperations
     {
 
         public static void PrintDuplicateCharactersFromString(string str)
         {
             var table = new Dictionary<char, int>();
 
-            foreach(var item in str)
+            foreach (var item in str)
             {
                 if (table.ContainsKey(item))
                 {
@@ -23,7 +21,7 @@ namespace ProgrammingPractice
                     table[item] = 1;
             }
 
-            foreach(var item in table)
+            foreach (var item in table)
             {
                 Console.WriteLine(table[item.Key]);
             }
@@ -38,7 +36,7 @@ namespace ProgrammingPractice
 
             var strOne = arr1.ToString();
             var strTwo = arr2.ToString();
-            if(strOne.Equals(strTwo))
+            if (strOne.Equals(strTwo))
             {
                 return true;
             }
@@ -47,7 +45,7 @@ namespace ProgrammingPractice
 
         public static bool StringContainsDigitOnly(string str)
         {
-            if(str.All(Char.IsDigit))
+            if (str.All(Char.IsDigit))
             {
                 return true;
             }
@@ -56,12 +54,12 @@ namespace ProgrammingPractice
 
         public static string ReverseWordsOfString(string str)
         {
-            string output= string.Empty;
+            string output = string.Empty;
             var words = str.Split(' ');
             foreach (var item in words)
             {
                 item.Reverse();
-                output += item+" "; 
+                output += item + " ";
             }
             Console.WriteLine(output);
             return output;

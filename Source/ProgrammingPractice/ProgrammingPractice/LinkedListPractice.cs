@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProgrammingPractice
 {
@@ -18,18 +14,18 @@ namespace ProgrammingPractice
         }
         public Node Insert(Node head, int data)
         {
-            if (head==null)
+            if (head == null)
             {
-                head= new Node(data);
+                head = new Node(data);
                 return head;
             }
             var temp = head;
-            while (head.next!=null)
+            while (head.next != null)
             {
                 head = head.next;
             }
-            head.next= new Node(data);
-           
+            head.next = new Node(data);
+
             return temp;
         }
         public void Display(Node head)
@@ -43,14 +39,14 @@ namespace ProgrammingPractice
         }
     }
 
-    class calculator :AdvancedArithmetic
+    class calculator : AdvancedArithmetic
     {
         public int divisorSum(int n)
         {
             int sum = 0;
             for (int i = 0; i < n; i++)
             {
-                if (n%i==0)
+                if (n % i == 0)
                 {
                     sum += i;
                 }

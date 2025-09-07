@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace ProgrammingPractice
 {
@@ -238,9 +237,9 @@ namespace ProgrammingPractice
 
         public static void ReverseArrayUptoNth(int n, int[] array)
         {
-            for(int i=array.Length-n; i>0; i--)
+            for (int i = array.Length - n; i > 0; i--)
             {
-               for(int j=0; i< array.Length-n; j++)
+                for (int j = 0; i < array.Length - n; j++)
                 {
 
                 }
@@ -533,7 +532,7 @@ namespace ProgrammingPractice
     }
     class Student : Person
     {
-        private int[] testScores;  
+        private int[] testScores;
         public Student() { }
 
         public Student(string firstName, string lastName, int id, int[] scores)

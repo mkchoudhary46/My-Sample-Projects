@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace StrategyPatternPractice
 {
@@ -12,7 +8,7 @@ namespace StrategyPatternPractice
         {
             ISortingStrategy sortingStrategy = null;
 
-            List<int> studentNumbers = new List<int>() { 123,32,12,1};
+            List<int> studentNumbers = new List<int>() { 123, 32, 12, 1 };
 
             sortingStrategy = GetSortingOptions(ObjectsToSort.StudentNumber);
 
